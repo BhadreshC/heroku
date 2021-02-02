@@ -11,6 +11,9 @@ class PostsController < ApplicationController
   # GET /posts/1.json
   def show
   end
+  def about_us
+    
+  end
 
   # GET /posts/new
   def new
@@ -69,6 +72,6 @@ class PostsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def post_params
-      params.require(:post).permit(:title, :content,:price, :post_date)
+      params.require(:post).permit(:title, :content,:price,:post_date)
     end
 end
